@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Nights at Freddy's</title>
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <div class="comands">
+            <div class="division">
+                <p><span id="comand-A">A</span> - <span id="references-A">Porta Esquerda</span></p>
+                <p><span id="comand-D">D</span> - <span id="references-D">Porta Direita</span></p>
+                <p><span id="comand-S">S</span> - <span id="references-S">Câmera</span></p>
+            </div>
+            <div class="division">
+                <p><span id="comand-Q">Q</span> - <span id="references-Q">Luz Esquerda</span></p>
+                <p><span id="comand-E">E</span> - <span id="references-E">Luz Direita</span></p>
+            </div>
+        </div>
+        <div class="define-night">
+            <label for="night">Informe a noite que deseja jogar:</label>
+            <input type="number" name="night" id="night" min="1" max="6" required>
+        </div>
+        <button id="start">Começar Noite</button>
+    </div>
+    <div id="statistcs">
+        <div id="clock">
+            <p><span>Horas: </span><span id="timer">0</span>am</p>
+            <p><span>Noite </span><span id="night-game">1</span></p>
+        </div>
+        <div id="battery-statistcs">
+            <p><span>Bateria: </span><span id="battery">100</span>%</p>
+            <div id="usage-box">
+                <p><span>Usage: </span></p>
+                <div id="usage-ponta"></div>
+                <div id="usage">
+                    <div id="usage1" class="box"></div>
+                    <div id="usage2" class="box"></div>
+                    <div id="usage3" class="box"></div>
+                    <div id="usage4" class="box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="Script/Class.js"></script>
+    <script src="Script/Script.js"></script>
+</body>
+
+</html>

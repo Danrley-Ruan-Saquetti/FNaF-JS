@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#menu {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 1.3rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    border-top: .001px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    letter-spacing: .02rem;
+    background-color: white;
+}
+
+.comands {
+    display: flex;
+}
+
+.division:first-child {
+    margin-right: 20px;
+}
+
+.define-night {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.define-night #night {
+    margin-left: 5px;
+    width: 30px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 1rem;
+    padding-left: 1rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+#start {
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: .02rem;
+    color: white;
+    transition: .2s;
+}
+
+#start:hover {
+    background-color: rgb(27, 86, 145);
+    cursor: pointer;
+}
+
+#statistcs {
+    display: none;
+    position: fixed;
+    width: 1210px;
+    font-size: 1.7rem;
+    color: white;
+    z-index: 10000;
+    top: 10px;
+    left: 20px;
+    font-weight: 500;
+    user-select: none;
+}
+
+#clock {
+    position: absolute;
+    right: 0;
+}
+
+#battery-statistcs {
+    display: flex;
+    flex-direction: column;
+}
+
+#usage-box {
+    display: flex;
+}
+
+#usage {
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 50px;
+    height: 20px;
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+#usage-ponta {
+    position: relative;
+    width: 3px;
+    height: 10px;
+    left: 20px;
+    top: 16px;
+    background-color: white;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.box {
+    position: relative;
+    display: none;
+    width: 10.5px;
+    height: 92%;
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+#usage1 {
+    display: flex;
+    background-color: #00b300;
+}
+
+#usage2 {
+    background-color: #dde000;
+}
+
+#usage3 {
+    background-color: #e97100;
+}
+
+#usage4 {
+    background-color: #cf0000;
+}
+
+#clock p {
+    text-align: end;
+}
+
+canvas {
+    display: none;
+    z-index: 1;
+}
